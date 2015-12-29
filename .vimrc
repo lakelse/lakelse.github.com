@@ -10,6 +10,7 @@ set t_Co=256
 "colorscheme desert
 colorscheme molokai
 set nu
+set ruler
 
 set tabstop=2
 set shiftwidth=2
