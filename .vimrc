@@ -16,10 +16,19 @@ set nu
 
 set tabstop=2
 set shiftwidth=2
+
 set expandtab
 
 set laststatus=2
 
+
+"vim ruby requirements...
+set nocompatible      " We're running Vim, not Vi!
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+set omnifunc=syntaxcomplete#Complete
 "autocmd BufEnter * silent! lcd %:p:h
 
 
@@ -38,6 +47,8 @@ imap <F7> <C-R>=strftime("%Y-%m-%d %H:%M:%S %Z")<CR>
 
 let g:CommandTHighlightColor = 'Visual'
 
+imap <S-CR>    <CR><CR>end<Esc>-cc
+
 " set background transparent
 "hi Normal  ctermfg=252 ctermbg=none
 "hi NonText ctermfg=252 ctermbg=none
@@ -45,5 +56,5 @@ let g:CommandTHighlightColor = 'Visual'
 set nohlsearch
 
 " see: http://vim.wikia.com/wiki/Remove_swap_and_backup_files_from_your_working_directory
-set backupdir=~/.backup//
-set directory=~/.backup//
+" set backupdir=~/.backup//
+" set directory=~/.backup//
