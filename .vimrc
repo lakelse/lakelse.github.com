@@ -2,15 +2,17 @@ execute pathogen#infect()
 filetype plugin indent on
 
 
-map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
-map <leader>r :CommandTFlush<cr>
+"map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
+"map <leader>r :CommandTFlush<cr>
+
+set ruler
 
 syntax enable
 set t_Co=256
 "colorscheme desert
 colorscheme molokai
+"colorscheme grb256
 set nu
-set ruler
 
 set tabstop=2
 set shiftwidth=2
@@ -39,3 +41,9 @@ let g:CommandTHighlightColor = 'Visual'
 " set background transparent
 "hi Normal  ctermfg=252 ctermbg=none
 "hi NonText ctermfg=252 ctermbg=none
+
+set nohlsearch
+
+" see: http://vim.wikia.com/wiki/Remove_swap_and_backup_files_from_your_working_directory
+set backupdir=~/.backup//
+set directory=~/.backup//
