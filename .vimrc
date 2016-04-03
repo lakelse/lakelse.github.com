@@ -1,3 +1,5 @@
+" https://raw.githubusercontent.com/lakelse/lakelse.github.com/master/.vimrc
+
 execute pathogen#infect()
 filetype plugin indent on
 
