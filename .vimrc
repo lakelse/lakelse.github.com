@@ -58,3 +58,10 @@ set nohlsearch
 " see: http://vim.wikia.com/wiki/Remove_swap_and_backup_files_from_your_working_directory
 " set backupdir=~/.backup//
 " set directory=~/.backup//
+
+" opens new tab when using ctrl-p to select file
+" https://github.com/kien/ctrlp.vim/issues/160
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
