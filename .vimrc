@@ -1,5 +1,6 @@
 " https://raw.githubusercontent.com/lakelse/lakelse.github.com/master/.vimrc
-" checkout these themes:
+"
+" checkout these themes: https://github.com/noah/vim256-color
 " - atom-dark-256, seti or 256-grayvim
 
 execute pathogen#infect()
