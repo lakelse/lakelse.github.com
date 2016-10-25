@@ -2,6 +2,8 @@
 "
 " checkout these themes: https://github.com/noah/vim256-color
 " - atom-dark-256, seti or 256-grayvim
+" % cd ~/.vim/bundle
+" % git clone --recursive git://github.com/noah/vim256-color.git
 
 execute pathogen#infect()
 filetype plugin indent on
