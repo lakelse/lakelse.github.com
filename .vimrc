@@ -1,4 +1,6 @@
 " https://raw.githubusercontent.com/lakelse/lakelse.github.com/master/.vimrc
+" checkout these themes:
+" - atom-dark-256, seti or 256-grayvim
 
 execute pathogen#infect()
 filetype plugin indent on
