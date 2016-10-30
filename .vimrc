@@ -17,7 +17,8 @@ set ruler
 syntax enable
 set t_Co=256
 "colorscheme desert
-colorscheme molokai
+"colorscheme molokai
+colorscheme atom-dark-256
 "colorscheme grb256
 set nu
 
