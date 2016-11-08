@@ -73,3 +73,6 @@ set nohlsearch
 "    \ 'AcceptSelection("e")': ['<c-t>'],
 "    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
 "    \ }
+
+"  http://stackoverflow.com/questions/1562633/setting-vim-whitespace-preferences-by-filetype
+autocmd Filetype php setlocal ts=4 sts=4 sw=4
