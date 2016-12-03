@@ -5,14 +5,10 @@
 "wget https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 "mkdir -p ~/.vim/colors
 "curl -L http://www.vim.org/scripts/download_script.php?src_id=9750 > ~/.vim/colors/molokai.vim
+"curl -L https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim > ~/.vim/colors/atom-dark-256.vim
 "cd ~/.vim/bundle
 "git clone https://github.com/vim-ruby/vim-ruby.git
 "git clone https://github.com/kien/ctrlp.vim.git
-
-" checkout these themes: https://github.com/noah/vim256-color
-" - atom-dark-256, seti or 256-grayvim
-" % cd ~/.vim/bundle
-" % git clone --recursive git://github.com/noah/vim256-color.git
 
 execute pathogen#infect()
 filetype plugin indent on
