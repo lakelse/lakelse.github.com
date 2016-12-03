@@ -1,5 +1,14 @@
 " https://raw.githubusercontent.com/lakelse/lakelse.github.com/master/.vimrc
 "
+"mkdir -p ~/.vim/autoload ~/.vim/bundle
+"cd ~/.vim/autoload
+"wget https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+"mkdir -p ~/.vim/colors
+"curl -L http://www.vim.org/scripts/download_script.php?src_id=9750 > ~/.vim/colors/molokai.vim
+"cd ~/.vim/bundle
+"git clone https://github.com/vim-ruby/vim-ruby.git
+"git clone https://github.com/kien/ctrlp.vim.git
+
 " checkout these themes: https://github.com/noah/vim256-color
 " - atom-dark-256, seti or 256-grayvim
 " % cd ~/.vim/bundle
