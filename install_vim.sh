@@ -10,7 +10,7 @@ declare -A c=( \
      [vimrc]="https://raw.githubusercontent.com/lakelse/lakelse.github.com/master/.vimrc" \
   [pathogen]="https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim" \
   [vim_ruby]="https://github.com/vim-ruby/vim-ruby.git" \
-     [ctrlp]="https://github.com/kien/ctrlp.vim.git"
+     [ctrlp]="https://github.com/kien/ctrlp.vim.git" \
 )
 
 echo "alias svim=\"sudo -E /usr/bin/vim\"" >> ~/.bashrc
