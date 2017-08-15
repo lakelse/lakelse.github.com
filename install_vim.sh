@@ -19,7 +19,6 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors
 
 # complete installing vim
 ${c[curl]} ${c[vimrc]}
-${c[curl]} ${c[tmux_conf]}
 
 cd ~/.vim/autoload && ${c[curl]} ${c[pathogen]}
 cd ~/.vim/bundle   && ${c[git]}  ${c[vim_ruby]} && ${c[git]}  ${c[ctrlp]}
