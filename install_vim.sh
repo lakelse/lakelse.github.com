@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo dnf install vim -y
+
 declare -A c=( \
       [curl]="/usr/bin/curl --remote-name --silent" \
        [git]="/usr/bin/git clone --quiet" \
@@ -15,10 +17,10 @@ echo "alias svim=\"sudo -E /usr/bin/vim\"" >> ~/.bashrc
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors
 
-# complete installing vim and tmux
+# complete installing vim
 ${c[curl]} ${c[vimrc]}
 ${c[curl]} ${c[tmux_conf]}
 
-cd ~/.vim/autoload && \${c[curl]} \${c[pathogen]}
-cd ~/.vim/bundle   && \${c[git]}  \${c[vim_ruby]} && \${c[git]}  \${c[ctrlp]}
-cd ~/.vim/colors   && \${c[curl]} \${c[molokai]}  && \${c[curl]} \${c[atom_dark]}
+cd ~/.vim/autoload && ${c[curl]} ${c[pathogen]}
+cd ~/.vim/bundle   && ${c[git]}  ${c[vim_ruby]} && ${c[git]}  ${c[ctrlp]}
+cd ~/.vim/colors   && ${c[curl]} ${c[molokai]}  && ${c[curl]} ${c[atom_dark]}
