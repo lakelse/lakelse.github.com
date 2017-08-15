@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-sudo dnf install vim -y
-
 declare -A c=( \
       [curl]="/usr/bin/curl --remote-name --silent" \
        [git]="/usr/bin/git clone --quiet" \
