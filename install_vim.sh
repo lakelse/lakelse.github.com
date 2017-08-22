@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-sudo dnf install vim -y
+dnf upgrade -y vim-minimal
+sudo dnf install -y vim
 
 declare -A c=( \
       [curl]="/usr/bin/curl --remote-name --silent" \
