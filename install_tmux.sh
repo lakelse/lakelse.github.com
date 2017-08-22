@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo dnf install tmux -y
+
 declare -A c=( \
       [curl]="/usr/bin/curl --remote-name --silent" \
  [tmux_conf]="https://raw.githubusercontent.com/lakelse/lakelse.github.com/master/.tmux.conf" \
