@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dnf upgrade -y vim-minimal
+sudo dnf upgrade -y vim-minimal
 sudo dnf install -y vim
 
 declare -A c=( \
