@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 sudo dnf upgrade -y vim-minimal
 sudo dnf install -y vim
 
