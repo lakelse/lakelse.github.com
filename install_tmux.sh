@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 sudo dnf install tmux -y
 
 declare -A c=( \
