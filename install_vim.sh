@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# install: \curl -sSL https://raw.githubusercontent.com/lakelse/lakelse.github.com/master/install_vim.sh | bash
 set -e
 
 sudo dnf upgrade -y vim-minimal
