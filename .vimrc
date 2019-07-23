@@ -80,4 +80,16 @@ set nohlsearch
 "    \ }
 
 "  http://stackoverflow.com/questions/1562633/setting-vim-whitespace-preferences-by-filetype
-autocmd Filetype php setlocal ts=4 sts=4 sw=4
+"autocmd Filetype php setlocal ts=4 sts=4 sw=4
+
+
+" From akalyaev via: https://coderwall.com/p/hk_bwg/how-to-speed-up-ctrlp
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+" sudo dnf install the_silver_searcher
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
