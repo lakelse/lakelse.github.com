@@ -2,8 +2,8 @@
 # install: \curl -sSL https://raw.githubusercontent.com/lakelse/lakelse.github.com/master/install_vim.sh | bash
 set -e
 
-sudo dnf upgrade -y vim-minimal
-sudo dnf install -y vim
+#sudo dnf upgrade -y vim-minimal
+#sudo dnf install -y vim
 
 declare -A c=( \
       [curl]="/usr/bin/curl --remote-name --silent" \
