@@ -97,6 +97,7 @@ endif
 nnoremap <C-t> :tabnew<CR>
 inoremap <C-t> <Esc>:tabnew<CR>
 
-nnoremap <C-w> :q<CR>
-inoremap <C-w> <Esc>:q<CR>
+nnoremap <C-d> :q<CR>
+inoremap <C-d> <Esc>:q<CR>
 
+set noswapfile
