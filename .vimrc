@@ -33,6 +33,7 @@ set softtabstop=2
 set expandtab
 
 set laststatus=2
+set colorcolumn=80
 
 
 "vim ruby requirements...
