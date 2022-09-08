@@ -14,6 +14,7 @@ declare -A c=( \
   [pathogen]="https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim" \
   [vim_ruby]="https://github.com/vim-ruby/vim-ruby.git" \
      [ctrlp]="https://github.com/kien/ctrlp.vim.git" \
+    [docker]="https://github.com/ekalinin/Dockerfile.vim.git" \
 )
 
 echo "alias svim=\"sudo -E /usr/bin/vim\"" >> ~/.bashrc
@@ -24,5 +25,5 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors
 ${c[curl]} ${c[vimrc]}
 
 cd ~/.vim/autoload && ${c[curl]} ${c[pathogen]}
-cd ~/.vim/bundle   && ${c[git]}  ${c[vim_ruby]} && ${c[git]}  ${c[ctrlp]}
+cd ~/.vim/bundle   && ${c[git]}  ${c[vim_ruby]} && ${c[git]}  ${c[ctrlp]} && ${c[git]}  ${c[docker]}
 cd ~/.vim/colors   && ${c[curl]} ${c[molokai]}  && ${c[curl]} ${c[atom_dark]}
