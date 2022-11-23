@@ -22,7 +22,7 @@ echo "alias svim=\"sudo -E /usr/bin/vim\"" >> ~/.bashrc
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors
 
 # complete installing vim
-${c[curl]} ${c[vimrc]}
+cd ~ && ${c[curl]} ${c[vimrc]}
 
 cd ~/.vim/autoload && ${c[curl]} ${c[pathogen]}
 cd ~/.vim/bundle   && ${c[git]}  ${c[vim_ruby]} && ${c[git]}  ${c[ctrlp]} && ${c[git]}  ${c[docker]}
