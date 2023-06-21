@@ -103,3 +103,6 @@ nnoremap <C-d> :q<CR>
 inoremap <C-d> <Esc>:q<CR>
 
 set noswapfile
+
+" https://stackoverflow.com/questions/4668623/show-count-of-matches-in-vim/4671112#4671112
+set shortmess-=S
