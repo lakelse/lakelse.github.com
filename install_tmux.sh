@@ -3,6 +3,7 @@
 set -e
 
 # sudo dnf install tmux -y
+cd ~
 
 declare -A c=( \
       [curl]="/usr/bin/curl --remote-name --silent" \
