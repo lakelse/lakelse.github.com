@@ -56,8 +56,10 @@ set backspace=indent,eol,start
 "autocmd BufEnter * silent! lcd %:p:h
 
 " timestamp
-nmap <F7> a<C-R>=strftime("%Y-%m-%d %H:%M:%S %Z")<CR><Esc>
-imap <F7> <C-R>=strftime("%Y-%m-%d %H:%M:%S %Z")<CR>
+" nmap <F7> a<C-R>=strftime("%Y-%m-%d %H:%M:%S %Z")<CR><Esc>
+" imap <F7> <C-R>=strftime("%Y-%m-%d %H:%M:%S %Z")<CR>
+nnoremap <leader>dt i<C-R>=strftime("%Y-%m-%d %H:%M:%S %Z")<CR><Esc>
+inoremap <leader>dt <C-R>=strftime("%Y-%m-%d %H:%M:%S %Z")<CR>
 
 let g:CommandTHighlightColor = 'Visual'
 
