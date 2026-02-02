@@ -108,3 +108,6 @@ set noswapfile
 
 " https://stackoverflow.com/questions/4668623/show-count-of-matches-in-vim/4671112#4671112
 set shortmess-=S
+
+set exrc          " allow reading .vimrc/.exrc in the local directory
+set secure        " disable unsafe commands from local vimrc
